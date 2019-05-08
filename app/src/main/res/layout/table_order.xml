@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                card_view:cardBackgroundColor="#f9f9f9"
+                card_view:cardCornerRadius="8dp"
+               android:layout_margin="10dp"
+                >
+<LinearLayout
+    android:id="@+id/ll_veg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="Veg Menu"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/veg_image"
+                android:src="@drawable/veglogo"/>
+    </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                card_view:cardBackgroundColor="#f9f9f9"
+
+                card_view:cardCornerRadius="8dp"
+                android:layout_margin="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_nonveg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="Nonveg menu"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/nonveg_bg"
+                        android:src="@drawable/nonveg3"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:visibility="gone"
+                card_view:cardBackgroundColor="#f9f9f9"
+                card_view:cardCornerRadius="8dp"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Avinash"
+                    />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
